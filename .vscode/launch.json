@@ -12,11 +12,11 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args": [
-                "-a", "C:/Users/chuxi/Downloads/baiduyun/Girl/test.7z",
+                "-a", "C:/Users/chuxi/Downloads/baiduyun/Games/XJ00106/XJ00106.part2.rar",
                 "-d", "10m_common_passwords.txt",
-                "-o", "C:/Users/chuxi/Downloads/baiduyun/Girl/test",
-                "-p", "2",
-                "-m", "4"
+                "-o", "C:/Users/chuxi/Downloads/baiduyun/Games/XJ00106",
+                "-p", "20",
+                "-m", "500000"
             ]
         }
     ]

@@ -4,6 +4,7 @@ import sys
 from argparse import ArgumentParser
 from zipfile import ZipFile
 import py7zr
+import rarfile  
 from multiprocessing import Process, Manager, Lock
 
 # Set a higher recursion limit (if needed)
@@ -51,6 +52,8 @@ class PasswordCracker:
             self._crack_7z()
         elif self.archive.endswith('.zip'):
             self._crack_zip()
+        elif self.archive.endswith('.rar'):  # Add this condition
+            self._crack_rar()               # Call the method to crack RAR
 
     def _crack_7z(self):
         """Crack the 7z archive."""
@@ -59,7 +62,11 @@ class PasswordCracker:
     def _crack_zip(self):
         """Crack the zip archive."""
         self._crack_archive(ZipFile, encode_password=True)
-    
+
+    def _crack_rar(self):
+        """Crack the RAR archive."""
+        self._crack_archive(rarfile.RarFile, encode_password=True)
+
     def estimated_total_checked(self):
         """Estimate the total number of passwords checked across all processes."""
         return self.checked_passwords * self.total_processes
