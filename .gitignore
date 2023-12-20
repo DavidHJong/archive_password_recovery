@@ -1,0 +1,5 @@
+
+test_file_path.json
+test_command.bat
+/.conda/*
+*.ipynb
