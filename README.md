@@ -1,7 +1,7 @@
 
 # 🔐 Archive Password Recovery
 
-🔑 A Python tool for recovering ZIP and 7z archive passwords using parallel processing
+🔑 A Python tool for recovering ZIP, 7z, rar archive passwords using parallel processing
 
 ## Disclaimer
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
@@ -38,7 +38,7 @@ python archive_password_recover_parallel.py -a <archive> -d <dictionary> -o <out
 
 ### Command-line Arguments
 - `-h, --help`: Show help message and exit.
-- `-a <archive>, --archive <archive>`: Path to the archive file (zip or 7z).
+- `-a <archive>, --archive <archive>`: Path to the archive file (zip, 7z, rar).
 - `-d <dictionary>, --dictionary <dictionary>`: Path to the password dictionary file.
 - `-o <output>, --output <output>`: Path for extracted files.
 - `-p <processes>, --processes <processes>`: Specify the number of parallel processes (default is 8).
